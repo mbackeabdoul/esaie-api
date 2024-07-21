@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .details-card {
+            max-width: 600px; /* Limite la largeur de la carte des détails */
+            margin: auto; /* Centre la carte horizontalement */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center" id="independentTitle">Listes des Pays Indépendants</h2>
+        <h2 class="text-center" id="nonIndependentTitle">Listes des Pays Non Indépendants</h2>
+        <div id="PaysIndependent" class="row text-center"></div>
+        <div id="PaysNonIndependent" class="row text-center"></div>
+
+        <div id="countryDetails" class="mt-4" style="display: none;">
+            <h2 class="text-center">Détails du Pays</h2>
+            <div id="detailsContainer" class="card details-card"></div>
+            <button class="btn btn-primary mt-3" onclick="goBack()">Retour</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
